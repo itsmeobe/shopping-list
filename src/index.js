@@ -13,7 +13,7 @@ let alertEmpty = () => {
     errorMessage.innerHTML = "Email correct :)";
     errorMessage.classList.replace("text-red-500", "text-green-500");
     errorMessage.classList.replace("text-black-500", "text-green-500");
-    email.classList.style = "border-green-500";
+    email.classList.style = "border-green-500");
   }
 };
 

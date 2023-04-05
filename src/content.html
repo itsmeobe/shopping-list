@@ -8,7 +8,11 @@
     <title>SHOPIE.</title>
   </head>
   <body class="flex flex-col bg-[#F0BE05]" id="">
-    <div class="my-9">
+    <div class="my-8">
+      <div class="flex justify-end">
+        <img class="w-9" src="../assets/account.png" alt="account" />
+      </div>
+
       <h1 class="text-center text-black-500 font-bold font-sans text-3xl">
         SHOPIE.
       </h1>
@@ -16,6 +20,26 @@
         Your shopping reminder.
       </p>
     </div>
+    <div
+      class="flex flex-col items-center bg-[#FEF6F3] rounded-t-3xl gap-5 pb-6"
+    >
+      <p
+        class="text-black-500 font-medium font-sans text-xl font-bold text-center"
+      >
+        Hello! Let's see what u need
+      </p>
+      <div class="flex gap-2">
+        <input
+          class="rounded-3xl w-80 h-9 ps-4 placeholder:text-black placeholder:text-xs placeholder:font-thin placeholder:italic"
+          type="add your shopping list"
+          placeholder="search your shopping list"
+          id="searchList"
+        />
+        <button><img class="w-8" src="../assets/add.png" alt="add" /></button>
+      </div>
+      <div class="bg-[#FEF6F3] w-full flex flex-col p-8 gap-4" id="box"></div>
+    </div>
+
     <script src="content.js"></script>
   </body>
 </html>
