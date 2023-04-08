@@ -1,6 +1,7 @@
 const API_ENDPOINT = "https://642c0edd208dfe254726c8ee.mockapi.io/modify";
 const box = document.getElementById("box");
 
+//CRUD - READ//
 const showData = () => {
   fetch(API_ENDPOINT)
     .then((response) => response.json())
@@ -14,8 +15,8 @@ const showData = () => {
           <p>${data[i].title}</p>
           </div>
           <div class="flex justify-end">
-             <button><img class="w-8" src="../assets/edit.png" alt="edit" /></button>
-             <button><img class="w-8" src="../assets/delete.png" alt="delete" /></button>
+             <button id="edit"><img class="w-8" src="../assets/edit.png" alt="edit" /></button>
+             <button id="delete"><img class="w-8" src="../assets/delete.png" alt="delete" /></button>
           </div>
         </div>`;
       }
